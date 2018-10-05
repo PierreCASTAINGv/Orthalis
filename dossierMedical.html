@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Navigation</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    
+
+</head>
+
+<body>
+
+    <!-- Chargement de la page -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- Navigation -->
+    <nav role="navigation">
+        <h5 class="center">Dossier médical</h5>
+
+        <ul id="slide-out" class="sidenav sidenav-fixed center">
+            <li>
+                <img src="img/utilisateur.jpg" id="imgClient" class="circle">
+            </li>
+            <li>
+                <a href="accueil.html">
+                    <i class="material-icons white-text">home</i>Accueil</a>
+            </li>
+            <li>
+                <a href="cabinet.html">
+                    <i class="material-icons white-text">location_on</i>Cabinet</a>
+            </li>
+            <li>
+                <a href="profil.html">
+                    <i class="material-icons white-text">person</i>Mon profil</a>
+            </li>
+            <li>
+                <a href="dossierMedical.html" class="active">
+                    <i class="material-icons white-text">folder</i>Dossier médical</a>
+            </li>
+            <li>
+                <a href="parametres.html">
+                    <i class="material-icons white-text">settings</i>Paramètres</a>
+            </li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+        </a>
+    </nav>
+    <!-- Page -->
+    <main>
+        <!-- Header -->
+        <header class="center">
+            <img class="vague" src="img/vaguetop.svg">
+            <img src="" alt="" class="circle responsive-img Picture" id="photoProfil">
+            <h6 class="center title_consul">Consulter vos factures / vos RDV :</h6>
+            
+        </header>
+        <!-- Sections -->
+        <section class="container">
+            <ul class="collapsible">
+                <li class="center">
+                    <div class="collapsible-header Paiement">
+                        Historique des paiements
+                        <p><i class="material-icons">arrow_drop_down</i></p>
+                    </div>
+
+                    <div class="collapsible-body" id="paiements">
+                        <!-- <div class="collapsible-header factures">
+                            <i class="material-icons">file_download</i>Facture du 05/05/18
+                        </div>
+                        <div class="collapsible-body2 deuxieme">
+                            <div class="collapsible-header">
+                                <i class="material-icons">file_download</i>Facture du 12/05/18
+                            </div>
+                        </div>
+                        <div class="collapsible-body3 troisieme">
+                            <div class="collapsible-header">
+                                <i class="material-icons">file_download</i>Facture du 14/05/18
+                            </div> -->
+                    </div>
+
+                </li>
+
+                <li class="center">
+                    <div class="collapsible-header Rendez-vous">
+                        Historique des rendez-vous
+                        <p>
+                            <i class="material-icons">arrow_drop_down</i>
+                        </p>
+
+                    </div>
+                    <div class="collapsible-body premier" id="historendv">
+                        <ul class="collapsible" id="rdvo"></ul>
+                        <!-- <div class="collapsible-header rdv">
+                            <i class="material-icons" id="icon">file_download</i>Compte-rendu du 05/05/18
+                        </div>
+                        <div class="collapsible-body2 deuxieme">
+                            <div class="collapsible-header">
+                                <i class="material-icons">file_download</i>Compte-rendu du 12/05/18
+                            </div>
+                        </div>
+                        <div class="collapsible-body3 troisieme">
+                            <div class="collapsible-header">
+                                <i class="material-icons ">file_download</i>Compte-rendu du 14/05/18
+                            </div>
+                        </div> -->
+                    </div>
+    
+                </li>
+            </ul>
+        </section>
+
+        <br>
+
+        <footer class="container center">
+            <h6 class="center" id="solde">
+
+            </h6>
+        </footer>
+
+        <section class="GridImage style=position:relative;">
+
+                <h6 class="center title_consul">Consulter vos photos :</h6>
+            <section class="container center-align cont_photo">
+
+                    <div class="row">
+                            <div class="col s6 m6 l6">
+                                    <h5 class="title_col_img"><span>Avant</span> les soins</h5>
+                            </div>
+                            <div class="col s6 m6 l6">
+                                <h5 class="title_col_img"><span>Après</span> les soins</h5>
+                            </div>
+                        </div>
+            
+            </section>
+
+            <div style="width:90%;height:1px;clear:both"></div>
+        </section>
+
+    </main>
+
+    <!--  Scripts-->
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script> 
+    <script type="module" src="./js/initMedical.js"></script>
+    <!-- <script>
+        function deplier(el) {  
+            let getparent = el.lastElementChild;
+            let divin = getparent.style.display;
+
+            if (divin == 'none') {
+                 let nbre = document.querySelectorAll('.nodisplay');
+                 for (let u = 0; u < nbre.length; u++) {
+                     document.querySelectorAll('.nodisplay')[u].style.display = 'none';
+                     getparent.style.display = 'block';
+                 }
+            } else {
+                getparent.style.display = 'none';
+            }
+        }
+    </script> -->
+</body>
+
+</html>

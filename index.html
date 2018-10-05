@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login cabinet</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="center">
+        <br><br>
+        <img src="img/logo-orthalis.png" alt="" class="responsive-img">
+        <br><br>
+    </header>
+    <!-- Sections -->
+    <section class="container center">
+        <form name="formCabinet">
+            <div class="container input-field">
+                <i class="material-icons prefix">textsms</i>
+                <label for="codeCabinet">Taper votre identifiant Cabinet :</label>
+                <input type="password" name="codeCabinet" id="codeCabinet" maxlength="8" minlength="8" required>
+                
+                <br><br>
+                <button type="submit" class="waves-effect waves-light btn">Se connecter</button>
+            </div>
+        </form>
+        
+        <div id="resultat"></div>
+    </section>
+    <!-- Pieds de page -->
+    <footer class="footer grey-text">
+        <div class="container qrCode center-align">
+            <img src="img/qr-code-150x150.png" alt="" class="responsive-img">
+            <p>Politique de confidentialité</p>
+            <p>Termes et conditions</p>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+    <!--<script src="js/loginCabinet.js"></script>-->
+    <script src="js/loginCab.js"></script>
+
+</body>
+
+</html>
+

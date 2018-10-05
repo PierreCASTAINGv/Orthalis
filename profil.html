@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mon profil</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+
+    <!-- Chargement de la page -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- Navigation -->
+    <nav role="navigation">
+        <h5 class="center profil ">Mon profil</h5>
+        <ul id="slide-out" class="sidenav sidenav-fixed center">
+            <li>
+                <img src="img/utilisateur.jpg" id="imgClient" class="circle">
+            </li>
+            <li>
+                <a href="accueil.html">
+                    <i class="material-icons white-text">home</i>Accueil</a>
+            </li>
+            <li>
+                <a href="cabinet.html">
+                    <i class="material-icons white-text">location_on</i>Cabinet</a>
+            </li>
+            <li>
+                <a href="profil.html" class="active">
+                    <i class="material-icons white-text">person</i>Mon profil</a>
+            </li>
+            <li>
+                <a href="dossierMedical.html">
+                    <i class="material-icons white-text">folder</i>Dossier médical</a>
+            </li>
+            <li>
+                <a href="parametres.html">
+                    <i class="material-icons white-text">settings</i>Paramètres</a>
+            </li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+        </a>
+    </nav>
+    <!-- Page -->
+    <main>
+        <!-- Header -->
+        <header>
+            <img class="responsive-img" src="img/vaguetop.svg">
+            <div class="container center-align textHeader">
+                <img class="ImgProfil circle z-depth-3" src="" id="photoProfil">
+                <h4 class="TextNomUtilisateur center orange-text"></h4>
+                <!--<div class="row center">
+                    <h5 class="header col s12 light">Consulter et modifier vos informations :</h5>
+                </div>-->
+            </div>
+        </header>
+        <!-- Sections -->
+        <section class="container">
+            <!-- Formulaire -->
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col l6 s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="prenom" id="icon_prefix" value=" " type="text" class="validate prenom">
+                        <label for="icon_prefix" id="Prénom">Prénom</label>
+                    </div>
+                    <div class="input-field col l6 s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="nom" id="icon_prefix" value=" " type="text" class="validate nom">
+                        <label for="icon_prefix">Nom</label>
+                    </div>
+                    <div class="input-field col l6 s12">
+                        <i class="material-icons prefix">date_range</i>
+                        <input id="dateNaissance" id="icon_telephone date" value=" " type="text" class="validate date">
+                        <label for="icon_date">dateNaissance</label>
+                    </div>
+                    <div class="input-field col l6 s12">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="telephone1" value=" " type="text" class="validate tel">
+                        <label for="icon_telephone">Téléphone</label>
+                    </div>
+                    <div class="input-field col l6 s12">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="telephone2" id="icon_telephone tel" value=" " type="text" class="validate tel">
+                        <label for="icon_telephone">Téléphone</label>
+                    </div>
+                    <div class="input-field col l6 s12">
+                        <i class="material-icons prefix">mail</i>
+                        <input id="email" id="icon_email" value=" " type="text" class="validate mail">
+                        <label for="icon_email">Email</label>
+                    </div>
+
+            </form>
+        </section>
+
+    </main>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script type="module" src="js/initProfile.js"></script>
+
+
+</body>
+
+</html>

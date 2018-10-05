@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mon profil</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/loginPatient.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body class="font">
+    
+    <!-- Chargement de la page -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- Header -->
+    <header>
+        <img class="vaguetop" src="img/vaguetop.svg">
+        <h2 class="center">Bienvenue</h2>
+        <br><br>
+    </header>
+    <!-- Sections -->
+    <section class="container center">
+        <form onsubmit="login(); return false;">
+            <div class="container input-field">
+                <i class="material-icons prefix">person</i>
+                <input type="text" id="codePatient" required>
+                <label>Taper votre code patient</label>
+                <br><br>
+            </div>
+            <div class="container input-field">
+                <i class="material-icons prefix">lock_outline</i>
+                <input type="password" id="mdpPatient" required>
+                <label>Taper votre mot de passe :</label>
+                <br><br>
+            </div>
+            <button type="submit" class="waves-effect waves-light btn">Se connecter</button>
+        </form>
+        <div id="resultat"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <img class="vaguebottom hide-on-med-and-up" src="img/vaguebottom.svg">
+    </footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/loginPatient.js"></script>
+
+</body>
+
+</html>
