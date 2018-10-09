@@ -144,7 +144,7 @@ html, body {
             z-index: -1;
     }  
     
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 649px) {
         h2#nameCabinet {
             font-size: 1.2em;
             color:#cbfaf7 !important;
@@ -152,13 +152,13 @@ html, body {
     }
     
 
-@media screen and (min-width:700px) and (max-width:1239px) {
+@media screen and (min-width:650px) and (max-width:1279px) {
     h2#nameCabinet {
         font-size: 1.6em;
         color:#cbfaf7 !important;
     }
 }
-@media screen and (min-width:1240px) {
+@media screen and (min-width:1280px) {
     h2#nameCabinet {
         font-size: 1.8em;
         color:#cbfaf7 !important;
