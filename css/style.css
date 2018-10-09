@@ -131,7 +131,6 @@ html, body {
             color: white;
             z-index: 5;
             color:#cbfaf7 !important;
-            font-size: 1.1em;
         }
     h2#nameCabinet::after {
             content: "";
@@ -143,20 +142,32 @@ html, body {
             right: 0;
             position: absolute;
             z-index: -1;
-    }   
+    }  
     
-    .opacite {    
-    
-        color:#cbfaf7 !important;
-        font-size: 1.3em;
+@media screen and (max-width: 699px) {
+        h2#nameCabinet {
+            font-size: 1.2em;
+            color:#cbfaf7 !important;
+        }
     }
     
 
-@media screen and (min-width:1250px) {
+@media screen and (min-width:700px) and (max-width:1239px) {
+    h2#nameCabinet {
+        font-size: 1.6em;
+        color:#cbfaf7 !important;
+    }
+}
+@media screen and (min-width:1240px) {
     h2#nameCabinet {
         font-size: 1.8em;
         color:#cbfaf7 !important;
     }
+}
+
+.opacite {    
+    color:#cbfaf7 !important;
+    font-size: 1.3em;
 }
 
     .Fondcard{
